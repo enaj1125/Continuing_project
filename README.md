@@ -146,7 +146,7 @@ To test the program:
 insight_testsuite$ sh run_tests.sh 
 ```
 The structure of this submission includes: 
-
+```
 ├── README.md 
 ├── run.sh
 ├── src
@@ -183,3 +183,4 @@ The structure of this submission includes:
             │   └── tweets.txt
             └── tweet_output
                 └── output.txt
+```
