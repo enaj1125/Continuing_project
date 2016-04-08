@@ -11,7 +11,7 @@ Website of the code chanllenge: https://github.com/InsightDataScience/coding-cha
 3. [Technical Design and Trade-off](README.md#Technical-Design-and-Trade-off)
 4. [Mathematical Way to Calculate the Rolling Degree](README.md#mathematical-Way-to-Calculate-the-Rolling-Degree)
 5. [Test Cases](README.md#test-cases)
-6. [How to Run the Program](README.md#how-to-run-the-program)
+6. [Submission Directory Structure and How to Run the Program](README.md#submission- directory-structure-and-how-to-run-the-program)
 
 
 ## Overview of the Coding Challenge Solution
@@ -52,10 +52,10 @@ https://pypi.python.org/pypi/simplejson/
 3) sys
 https://docs.python.org/3.0/library/sys.html
 
-## Technical Design and Trade-off
+## Technical Design and Trade-Off
 #####1). Data structure and Time complexity
 
-The graph (edges, nodes) can be maintained using either the dictionary or list. Since the time complexity of search, insert, delete is O(1) for the dictionary, while o(n) for a list. Therefore, the dictionary is more efficient and was selected to do the job. 
+The graph (edges, nodes) can be maintained using either the dictionary or list. Since the time complexity of search, insert, delete is O(1) for the dictionary, while O(n) for a list. Therefore, the dictionary is more efficient and was selected to do the job. 
 
 #####2). Data Storage Memory VS. Time Complexity (in the context of big input data )
 
@@ -130,7 +130,7 @@ This test is created for testing the efficiency of the program to process large 
 
 expect output: which I calculated using another method -- the mathematical method discussed above.
 
-## How to Run the Program
+## Submission Directory Structure and How to Run the Program
 
 I format and organize the program based on the required "Repo directory structure".
 
