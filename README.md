@@ -145,3 +145,41 @@ To test the program:
 ```
 insight_testsuite$ sh run_tests.sh 
 ```
+The structure of this submission includes: 
+
+├── README.md 
+├── run.sh
+├── src
+│   └── average_degree.java
+├── tweet_input
+│   └── tweets.txt
+├── tweet_output
+│   └── output.txt
+└── insight_testsuite
+    ├── run_tests.sh
+    └── tests
+        └── test-2-tweets-all-distinct
+        │   ├── tweet_input
+        │   │   └── tweets.txt
+        │   └── tweet_output
+        │       └── output.txt
+        └── test-2-tweets-one-hashtag
+        │    ├── tweet_input
+        │    │   └── tweets.txt
+        │    └── tweet_output
+        │        └── output.txt
+        ── test-3-ten-tweets
+        │    ├── tweet_input
+        │    │   └── tweets.txt
+        │    └── tweet_output
+        │        └── output.txt
+        ── test-4-30-tweet
+        │    ├── tweet_input
+        │    │   └── tweets.txt
+        │    └── tweet_output
+        │        └── output.txt
+        ── test-5-10k-tweet
+            ├── tweet_input
+            │   └── tweets.txt
+            └── tweet_output
+                └── output.txt
