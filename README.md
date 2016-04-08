@@ -3,7 +3,7 @@
 This is the solution of Yan Jiang to the coding challenge for the Insight Data Engineering Program implemented in "Python 3".
 
 # Table of Contents
-1. [Code Summary]
+1. [Code Summary](README.md#Code summary)
 2. [Details of Implementation]
 3. [Building the Twitter Hashtag Graph](README.md#building-the-twitter-hashtag-graph)
 4. [Modifying the Twitter Hashtag Graph with Incoming Tweet](README.md#modifying-the-twitter-hashtag-graph-with-incoming-tweet)
