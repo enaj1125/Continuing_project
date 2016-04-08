@@ -17,23 +17,23 @@ Website of the code chanllenge: https://github.com/InsightDataScience/coding-cha
 ## Overview of the Coding Challenge Solution
 
 The task is to calculate the average degree of a vertex in a Twitter hashtag graph for the last 60 seconds, and update this each time a new tweet appears. You will thus be calculating the average degree over a 60-second exclusive sliding window.
------------------------------------------------------------------------------------------------------------------
+
 The solution were implemented in two major steps: 
 
 1) Read tweets data, convert into json object, and extract "created_at" and "hashtags" information.
 
 2) Store and update Twitter data in a hash table (dictionary), calculate the average degree of a vertex in a Twitter hashtag graph in a 60-s window.
------------------------------------------------------------------------------------------------------------------
-####How to represent graph and keep track of the edges and nodes?
+
+##### How to represent graph and keep track of the edges and nodes?
 
 The graph is stored and maintained by a dictionary (hash table). Each pair of edges is represented as the "key" using a tuple, and the timing of this pair of edges is stored as the "value" using a string.  
 
-How to maintain a moving 60-s window?
+##### How to maintain a moving 60-s window?
 
 If an edge appears multiple times in the 60-s window, then its timing would be always updated to the most recent timing in the dictionary. 
 Thus, the graph should only consist of tweets that arrived in the last 60 seconds as compared to the maximum timestamp that has been processed.
 
-The logic of calculating the rolling degree?
+##### The logic of calculating the rolling degree?
 
 By counting all the current updated edges and nodes, the average degree could be calculated as:
 degree = total edges / total nodes
@@ -52,11 +52,11 @@ https://pypi.python.org/pypi/simplejson/
 https://docs.python.org/3.0/library/sys.html
 
 ## Technical Design and Trade-off
-1). Data structure and Time complexity
+#####1). Data structure and Time complexity
 
 The graph (edges, nodes) can be maintained using either the dictionary or list. Since the time complexity of search, insert, delete is O(1) for the dictionary, while o(n) for a list. Therefore, the dictionary is more efficient and was selected to do the job. 
 
-2). Data Storage Memory VS. Time Complexity (in the context of big input data )
+#####2). Data Storage Memory VS. Time Complexity (in the context of big input data )
 
 If two nodes a, b were connected, the resulting edges can be represented using two tuples (a,b) and (b,a). Or they could be represented by one tuple (a, b).
 
@@ -84,14 +84,14 @@ This method is more complicated, but provides a more mathematical way to describ
 ## Test Cases
 Five test cases were used to test this solution:
 
-Test case 1: (provided by the official website)
+#####Test case 1: (provided by the official website)
 
 name: test-1-tweets-all-distinct
 
 feature: 2-tweets, all distinct nodes
 
 
-Test case 2: (Yan Jiang created)
+#####Test case 2: (Yan Jiang created)
 
 name: test-2-tweets-one-hashtag
 
@@ -102,7 +102,7 @@ If there are no connections for the entire graph, then you can count the average
 
 expect output: 0.00
 
-Test case 3: (Yan Jiang created)
+#####Test case 3: (Yan Jiang created)
 
 name: test-3-ten-tweets
 
@@ -111,7 +111,7 @@ feature: 1 effective tweets, 5 hashtag
 This test is created for testing the first part of code : initializing the dictionary using the first tweet.
 expect output: 4.00
 
-Test case 4: (Yan Jiang created)
+#####Test case 4: (Yan Jiang created)
 
 name: test-4-30-tweets
 
@@ -121,7 +121,7 @@ This test is created for testing the rolling tweets that overlapping hashtags
 
 expect output: 4.00, 4.85, 5.63
 
-Test case 5: (Yan Jiang created)
+#####Test case 5: (Yan Jiang created)
 
 name: test-5-10k-tweets
 
