@@ -36,7 +36,8 @@ Thus, the graph should only consist of tweets that arrived in the last 60 second
 ##### The logic of calculating the rolling degree?
 
 By counting all the current updated edges and nodes, the average degree could be calculated as:
-degree = total edges / total nodes
+
+> degree = total edges / total nodes
 
 
 ## Dependencies/Modules used
@@ -69,9 +70,9 @@ However, since the FAQ of the code challenge indicates the program should have t
 
 ## Alternative (Mathematical) Way to Calculate the Rolling Degree
 
-current edges = previous edges + new edges - overlapping edges
+> current edges = previous edges + new edges - overlapping edges
 
-current nodes = previous nodes + new nodes - overlapping nodes
+> current nodes = previous nodes + new nodes - overlapping nodes
 
 in which, the new edges = number of new nodes * (number of new nodes - 1)
 
