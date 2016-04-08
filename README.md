@@ -11,7 +11,7 @@ Website of the code chanllenge: https://github.com/InsightDataScience/coding-cha
 3. [Technical Design and Trade-off](README.md#Technical-Design-and-Trade-off)
 4. [Mathematical Way to Calculate the Rolling Degree](README.md#mathematical-Way-to-Calculate-the-Rolling-Degree)
 5. [Test Cases](README.md#test-cases)
-6. [Submission Directory Structure](README.md#submission- directory-structure)
+6. [Submission Directory Structure](README.md#submission-directory-structure)
 
 
 ## Overview of the Coding Challenge Solution
