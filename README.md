@@ -140,4 +140,5 @@ submission$ sh run.sh
 
 To test the program: 
 
-insight_testsuite$ sh run_tests.sh 
+```insight_testsuite$ sh run_tests.sh 
+```
