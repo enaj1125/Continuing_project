@@ -17,16 +17,14 @@ Website of the code chanllenge: https://github.com/InsightDataScience/coding-cha
 ## Overview of the Coding Challenge Solution
 
 The task is to calculate the average degree of a vertex in a Twitter hashtag graph for the last 60 seconds, and update this each time a new tweet appears. You will thus be calculating the average degree over a 60-second exclusive sliding window.
-
-
-
+-----------------------------------------------------------------------------------------------------------------
 The solution were implemented in two major steps: 
 
 1) Read tweets data, convert into json object, and extract "created_at" and "hashtags" information.
 
 2) Store and update Twitter data in a hash table (dictionary), calculate the average degree of a vertex in a Twitter hashtag graph in a 60-s window.
-
-How to represent graph and keep track of the edges and nodes?
+-----------------------------------------------------------------------------------------------------------------
+####How to represent graph and keep track of the edges and nodes?
 
 The graph is stored and maintained by a dictionary (hash table). Each pair of edges is represented as the "key" using a tuple, and the timing of this pair of edges is stored as the "value" using a string.  
 
