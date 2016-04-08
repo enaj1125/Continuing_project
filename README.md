@@ -136,9 +136,12 @@ I format and organize the program based on the required "Repo directory structur
 
 To run the average_degree.py using the run.sh script: 
 
+```
 submission$ sh run.sh
+```
 
 To test the program: 
 
-```insight_testsuite$ sh run_tests.sh 
+```
+insight_testsuite$ sh run_tests.sh 
 ```
