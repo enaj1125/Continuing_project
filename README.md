@@ -3,6 +3,8 @@
 This is the solution module to the coding challenge for the 2016 Insight Data Engineering Program implemented in "Python 3".
 Developed by Yan Jiang, April, 2016
 
+Website of the code chanllenge: https://github.com/InsightDataScience/coding-challenge
+
 # Table of Contents
 1. [Overview of the Coding Challenge Solution](README.md#code-summary)
 2. [Packages used/Dependencies](README.md#details-of-implementation)
@@ -13,11 +15,10 @@ Developed by Yan Jiang, April, 2016
 
 
 ## Overview of the Coding Challenge Solution
-This module package was developed by Yan Jiang in April, 2016. 
 
 The task is to calculate the average degree of a vertex in a Twitter hashtag graph for the last 60 seconds, and update this each time a new tweet appears. You will thus be calculating the average degree over a 60-second exclusive sliding window.
 
-Website of the code chanllenge: https://github.com/InsightDataScience/coding-challenge
+
 
 The solution were implemented in two major steps: 
 
