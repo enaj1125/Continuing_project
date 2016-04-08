@@ -78,7 +78,7 @@ in which, the new edges = number of new nodes * (number of new nodes - 1)
 
 Thus, the degree can be calculated by keep tracking five variables: current edges, current nodes, new nodes, overlapping nodes, overlapping edges. 
 
-This method is more complicated, but provides a more mathematical way to describe how the new edges are formed by keeping tracking the overlapping hashtags.  
+This method is more complicated, but provides a more mathematical way to describe how the new edges are formed by keeping tracking the overlapping hashtags. This method is not used in calculating the rolling degree in this module.  
 
 
 
