@@ -15,7 +15,8 @@ Developed by Yan Jiang, April, 2016
 ## Overview of the Coding Challenge Solution
 This module package was developed by Yan Jiang in April, 2016. 
 
-Task: The task is to calculate the average degree of a vertex in a Twitter hashtag graph for the last 60 seconds, and update this each time a new tweet appears. You will thus be calculating the average degree over a 60-second exclusive sliding window.
+Task: 
+The task is to calculate the average degree of a vertex in a Twitter hashtag graph for the last 60 seconds, and update this each time a new tweet appears. You will thus be calculating the average degree over a 60-second exclusive sliding window.
 
 Website of the code chanllenge: https://github.com/InsightDataScience/coding-challenge
 
