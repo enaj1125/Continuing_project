@@ -7,10 +7,10 @@ Website of the code chanllenge: https://github.com/InsightDataScience/coding-cha
 
 # Table of Contents
 1. [Overview of the Coding Challenge Solution](README.md#code-summary)
-2. [Packages used/Dependencies](README.md#details-of-implementation)
-3. [Technical Trade-off of the Design](README.md#building-the-twitter-hashtag-graph)
-4. [Mathematical Way to Calculate the Rolling Degree](README.md#modifying-the-twitter-hashtag-graph-with-incoming-tweet)
-5. [Test Cases](README.md#maintaining-data-within-the-60-second-window)
+2. [Dependencies/Modules](README.md#Dependencies/Modules)
+3. [Technical Design and Trade-off](README.md#Technical-Design-and-Trade-off)
+4. [Mathematical Way to Calculate the Rolling Degree](README.md#mathematical-Way-to-Calculate-the-Rolling-Degree)
+5. [Test Cases](README.md#test-cases)
 6. [How to Run the Program](README.md#how-to-run-the-program)
 
 
@@ -40,7 +40,7 @@ By counting all the current updated edges and nodes, the average degree could be
 > degree = total edges / total nodes
 
 
-## Dependencies/Modules used
+## Dependencies/Modules
 There are three modules need to be imported, and they can be downloaded from:
 
 1) datetime
