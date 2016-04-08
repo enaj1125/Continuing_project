@@ -122,7 +122,7 @@ This test is created for testing the rolling tweets that overlapping hashtags
 
 expect output: 4.00, 4.85, 5.63
 
-#####Test case 5: (Yan Jiang created)
+#####Test case 5: (Yan Jiang created, but couldn't upload to github due to the 25 MB size limit)
 
 name: test-5-10k-tweets
 
@@ -174,13 +174,9 @@ The structure of this submission includes:
         │    └── tweet_output
         │        └── output.txt
         ── test-4-30-tweet
-        │    ├── tweet_input
-        │    │   └── tweets.txt
-        │    └── tweet_output
-        │        └── output.txt
-        ── test-5-10k-tweet
             ├── tweet_input
             │   └── tweets.txt
             └── tweet_output
                 └── output.txt
+
 ```
