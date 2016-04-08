@@ -1,3 +1,4 @@
+# This script was developed by Yan Jiang using Python 3.
 
 # Import libraries
 
@@ -9,7 +10,7 @@ except ImportError:
     import simplejson as json
     
 
-
+# Function that calculate the rolling degree
 def get_average_degree(input_tweets_file):
     ##########################################################################
     ### 1. Read tweets data, convert into json object, and extract "created_at" and "hashtags" information   
