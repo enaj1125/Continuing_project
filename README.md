@@ -1,9 +1,7 @@
-# InsightDataScience-Yan Jiang-cc
+# IDE-HW
 
-This is the solution module to the coding challenge for the 2016 Insight Data Engineering Program implemented in "Python 3".
+
 Developed by Yan Jiang, April, 2016
-
-Website of the code chanllenge: https://github.com/InsightDataScience/coding-challenge
 
 # Table of Contents
 1. [Overview of the Coding Challenge Solution](README.md#code-summary)
