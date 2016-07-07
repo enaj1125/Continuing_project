@@ -1,0 +1,7 @@
+
+
+1. http://stackoverflow.com/questions/3277503/how-to-read-a-file-line-by-line-into-a-list-with-python
+
+with open('/your/path/file') as f:
+    for line in f:
+        process(line)
