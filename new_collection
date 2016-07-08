@@ -9,3 +9,7 @@ with open('/your/path/file') as f:
 
 http://stackoverflow.com/questions/2501457/what-do-i-use-for-a-max-heap-implementation-in-python
 
+http://stackoverflow.com/questions/1387497/find-median-value-from-a-growing-set
+
+to read again:
+http://openbookproject.net/thinkcs/python/english3e/queues.html
