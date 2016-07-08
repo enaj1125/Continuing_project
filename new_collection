@@ -5,3 +5,7 @@
 with open('/your/path/file') as f:
     for line in f:
         process(line)
+
+
+http://stackoverflow.com/questions/2501457/what-do-i-use-for-a-max-heap-implementation-in-python
+
