@@ -21,3 +21,9 @@ to read again:
 https://svn.python.org/projects/python/tags/r27a4/Lib/heapq.py
 
 http://stackoverflow.com/questions/19276592/ideal-data-structure-with-fast-lookup-fast-update-and-easy-comparison-sorting
+
+python dictionary lookup most efficient: 
+http://stackoverflow.com/questions/24540975/why-does-key-in-d-keys-finish-in-on-time-while-key-in-d-finishes-in-o1?noredirect=1&lq=1
+
+
+
