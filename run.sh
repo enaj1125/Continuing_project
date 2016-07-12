@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
 
 
-
-# I'll execute my programs, with the input directory tweet_input and output the files in the directory tweet_output
-python ./src/Final_find_median.py ./tweet_input/tweets.txt ./tweet_output/output.txt
-
-
-
+# I'll execute my programs, with the input directory venmo_input and output the files in the directory venmo_output
+python ./src/rolling_median.py ./venmo_input/venmo-trans.txt ./venmo_output/output.txt
