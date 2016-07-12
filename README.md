@@ -19,7 +19,7 @@ self._small, self._large are used to use two heaps to keep counts of the degree 
 
 self._dict_node is used to store the name of node and its position in heap (self._small, self._large), so that we can look up each node easily with log(n).
  
-*Highlights:
+**Highlights:
 1. create a implement of O(1) deletion on min-heap with an additional supplementary hash table. 
 supplementary hash table store the position of nodes in the heap (large, small).
 
