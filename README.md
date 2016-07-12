@@ -2,7 +2,8 @@
 
 Developed by Yan Jiang using Python 3.
 
-Heap is an ideal data structure for maintaining a dynamically changing stream data; while hashtable is fast in search an element. This code use a data structure that combine the advantages of heap and hash table
+Heap is an ideal data structure for maintaining a dynamically changing stream data; while hashtable is fast in search an element. This code use a data structure that combine the advantages of heap and hash table:
+
 self._heap = []
 
 self._dict = {}
@@ -19,18 +20,18 @@ self._small, self._large are used to use two heaps to keep counts of the degree 
 
 self._dict_node is used to store the name of node and its position in heap (self._small, self._large), so that we can look up each node easily with log(n).
  
-**Highlights:
-1. create a implement of O(1) deletion on min-heap with an additional supplementary hash table. 
+Highlights:
+
+create a implement of O(1) deletion on min-heap with an additional supplementary hash table. 
 supplementary hash table store the position of nodes in the heap (large, small).
 
  
-
-2. How do I find the median of a dynamic changing collection of data?
+How do I find the median of a dynamic changing collection of data?
 I keep two heaps (or priority queues):
 Max-heap small has the smaller half of the numbers.
 Min-heap large has the larger half of the numbers.
 This gives me direct access to the one or two middle values (they're the tops of the heaps), so getting the median takes O(1) time. And adding a number takes O(log n) time.
 
  
-3. How to keep a rolling window of 60-s?
+How to keep a rolling window of 60-s?
 Use self._heap as an supplementry data to keep the timestamp is within the 60s window for self._dict. Meanwhile, update the two other data structures.
