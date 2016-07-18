@@ -1,7 +1,10 @@
 # Heap-hash data structure for computing the median of a stream data
 
-Developed by Yan Jiang using Python 3.
+####### Developed by Yan Jiang using Python 3.
 
+## Overview
+
+1. Data structure
 Heap is an ideal data structure for maintaining a dynamically changing stream data; while hashtable is fast in search an element. This code use a data structure that combine the advantages of heap and hash table:
 
 self._heap = []
@@ -20,7 +23,7 @@ self._small, self._large are used to use two heaps to keep counts of the degree 
 
 self._dict_node is used to store the name of node and its position in heap (self._small, self._large), so that we can look up each node easily with log(n).
  
-Highlights:
+## Highlights:
 
 create a implement of O(1) deletion on min-heap with an additional supplementary hash table. 
 supplementary hash table store the position of nodes in the heap (large, small).
