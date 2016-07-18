@@ -51,6 +51,26 @@ However, given the Venmo payments is often quite intensive n >> C, as such, in t
 
 
 
-### How to make a 
+### How to achieve delete any element from a heap in O(log n)?
+Orginally, finding an item in a heap is an O(n) operation, but if you already know where it is in the heap, removing it is O(log n).
+
+Thus, the position of each node (node, index_in_heap) can be maintained separately in a hashtable which has O(1) lookup complexity (on average). The overall complexity of looking up and deleting an element of a heap is O(log n).
+
+Since in this problem, two heaps were used, so a 3rd index is used to store a node in the hash table (node, index_in_heap, if_large). If the element is in the large heap, then if_large = 1, else if_large = 0. 
+
+
+### How to add/delete a element in heap and recording its position after reconstructing the heap tree?
+#####To add a element in a heap: 
+
+Add new data at next available leaf
+repair upward while recording the changed pos of each node
+
+
+#####To delete a element in a heap: 
+
+Swap last leaf and the target deleted element  
+Remove last leaf 
+Repair downward while recording the changed pos of each node
+
 
 
