@@ -29,10 +29,26 @@ When each new node is added in, it is added in the heaps () and the correspondin
  
 ### How to find the median of a dynamic changing stream of data?
 
-I keep two heaps (or priority queues):
-
-Max-heap small has the smaller half of the numbers.
+I keep two heaps (or priority queues): Max-heap small has the smaller half of the numbers.
 Min-heap large has the larger half of the numbers (all numbers were make negative values)
 This gives direct access to the one or two middle values (they're the tops of the heaps), so getting the median takes O(1) time. And adding or deleting a number takes O(log n) time. The advantage of using two heaps is that no need to sort all the numbers in the collection.
 
- 
+### What is the alternative way to do this task? 
+Use two hash tables. 
+
+In the first hash table, use a hash table to store all the edges and its timestamp. Record the most current time as a variable, When each new payment data comes in, check if it is within the 60s window, as well as check if every other item in the collection is within the 60s window. Takes O(n) to do the check. 
+
+In the second hashtable, count and store the number of edges for each node while keep it updated with the first hash table. Sort the degree values to calculate the median. The best sort algrithm takes nlog(n) to sort all the elements in the current 60s collection. 
+
+In total, this method would take nlog(n) time complexcity. 
+
+#### Time Complexcity Analysis of this two method: 
+If there are k numbers in the coming stream data, the first method takes K * C * log(n); the second method takes K * n*log(n). 
+
+If the stream data is very sparse in the 60s window, then C > n, in this situation, the second method is faster than the first method. 
+
+However, given the Venmo payments is often quite intensive n >> C, as such, in this situation, the first method is more efficient than the first method. 
+
+
+
+
