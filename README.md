@@ -7,12 +7,12 @@ The goal of this program is to 1) Use Venmo payments that stream in to build a g
 
 ## Highlights
 
-1. Data structure
+### Data structure
 Heap is an ideal data structure for maintaining a dynamically changing stream data; while hashtable is fast in search an element. This program create a data structure that combine the advantages of heap and hash table:
 
-...self._heap = []
+..self._heap = []
 
-...self._dict = {}
+..self._dict = {}
 
 ...self._dict_node = {}
 
@@ -27,7 +27,7 @@ The second pair(self._small, sel._large, self._dict_node) is used for sotring th
 When each new node is added in, it is added in the heaps () and the corresponding postion would be updated and stored in the self._dict_node. Takes log(n).
 
  
-2. How to find the median of a dynamic changing stream of data?
+### How to find the median of a dynamic changing stream of data?
 I keep two heaps (or priority queues):
 Max-heap small has the smaller half of the numbers.
 Min-heap large has the larger half of the numbers (all numbers were make negative values)
