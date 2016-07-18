@@ -28,11 +28,11 @@ When each new node is added in, it is added in the heaps () and the correspondin
 
  
 ### How to find the median of a dynamic changing stream of data?
+
 I keep two heaps (or priority queues):
+
 Max-heap small has the smaller half of the numbers.
 Min-heap large has the larger half of the numbers (all numbers were make negative values)
-This gives direct access to the one or two middle values (they're the tops of the heaps), so getting the median takes O(1) time. And adding or deleting a number takes O(log n) time.
-
-The advantage of using two heaps is that no need to sort all the numbers in the collection.
+This gives direct access to the one or two middle values (they're the tops of the heaps), so getting the median takes O(1) time. And adding or deleting a number takes O(log n) time. The advantage of using two heaps is that no need to sort all the numbers in the collection.
 
  
