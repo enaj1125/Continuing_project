@@ -10,7 +10,7 @@ The goal of this program is to 1) Use Venmo payments that stream in to build a g
 ### Data structure
 Heap is an ideal data structure for maintaining a dynamically changing stream data; while hashtable is fast in search an element. This program create a data structure that combine the advantages of heap and hash table:
 
-*self._heap = []
+   self._heap = []
 
 ..self._dict = {}
 
