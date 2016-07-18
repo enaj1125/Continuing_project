@@ -61,7 +61,7 @@ Since in this problem, two heaps were used, so a 3rd index is used to store a no
 
 
 
-### How to add/delete a element in heap and recording its position after reconstructing the heap tree?
+### How to add/delete an element in heap and recording the updated positions?
 
 ####To add a element in a heap: 
 
