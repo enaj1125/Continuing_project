@@ -8,17 +8,17 @@ The goal of this program is to 1) Use Venmo payments that stream in to build a g
 ## Highlights
 
 ### Data structure
-Heap is an ideal data structure for maintaining a dynamically changing stream data; while hashtable is fast in search an element. This program create a data structure that combine the advantages of heap and hash table:
+Heap is an ideal data structure for maintaining a dynamically changing stream data; while hashtable is fast in search an element. This program create a data structure that combine the advantages of heap and hash table. This data structure uses two pairs of hash-heap structures:
 
-   self._heap = []
+self._heap = []
 
-..self._dict = {}
+self._dict = {}
 
-...self._dict_node = {}
+self._dict_node = {}
 
-...self._small, self._large = [], []
+self._small, self._large = [], []
 
-This data structure use two pairs of hash-heap structures. The first pair (self._heap, self._dict) is used for storing the edges and maintain a rolling 60-s window. When each new payment data comes in, self._dict is used to check whether a relationship of a edge  (key in hashtable) is exsiting in the 60s-s collection and store the data. For this, dict is a very good fit; just map the hash to the timestamp so you can look up each item easily using O[1]. While self._heap serves as a supplementary data structure and is used to iterate over the items and pop out the payment data that is older than 60s, and the self._dict will also be updated at the same time. 
+The first pair (self._heap, self._dict) is used for storing the edges and maintain a rolling 60-s window. When each new payment data comes in, self._dict is used to check whether a relationship of a edge  (key in hashtable) is exsiting in the 60s-s collection and store the data. For this, dict is a very good fit; just map the hash to the timestamp so you can look up each item easily using O[1]. While self._heap serves as a supplementary data structure and is used to iterate over the items and pop out the payment data that is older than 60s, and the self._dict will also be updated at the same time. 
 
 In hash table, the average time complexcity of search, insertion, deletion is O(1). In heap, the time complexcity of insertion (push), deletion(pop) is log(n). So the time complexicity is log(n). 
 
