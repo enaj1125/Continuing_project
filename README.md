@@ -59,17 +59,23 @@ Thus, the position of each node (node, index_in_heap) can be maintained separate
 Since in this problem, two heaps were used, so a 3rd index is used to store a node in the hash table (node, index_in_heap, if_large). If the element is in the large heap, then if_large = 1, else if_large = 0. 
 
 
+
+
 ### How to add/delete a element in heap and recording its position after reconstructing the heap tree?
-#####To add a element in a heap: 
+
+####To add a element in a heap: 
 
 Add new data at next available leaf
+
 repair upward while recording the changed pos of each node
 
 
-#####To delete a element in a heap: 
+####To delete a element in a heap: 
 
 Swap last leaf and the target deleted element  
+
 Remove last leaf 
+
 Repair downward while recording the changed pos of each node
 
 
