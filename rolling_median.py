@@ -124,7 +124,6 @@ class MedianFinder:
             self._push((-item[0], item[1]), 0)     
       
             
-        #print("after _add_heap_node: self._large, self._small, self._dict_node", self._large, self._small, self._dict_node)
         
     def _delete_heap_Node(self, item):  
        
