@@ -24,7 +24,7 @@ In hash table, the average time complexcity of search, insertion, deletion is O(
 
 The second pair(self._small, sel._large, self._dict_node) is used for sotring the nodes and the corresponding degree. The self._dict_node is used for storing each node and its position in the two heap structures. So that the heaps can find any element in O(1), and delete the element while reheapify in log(n).   self._small, self._large are used to use two heaps to keep tracking each node and the degree of them in the current time window collection. 
 
-When each new node is added in, it is added in the heaps () and the corresponding postion would be updated and stored in the self._dict_node. Takes log(n).
+When each new node is added in, it is added in the heaps (small, large) and the corresponding postion would be updated and stored in the self._dict_node. Takes log(n).
 
  
 ### How to find the median of a dynamic changing stream of data?
@@ -47,11 +47,11 @@ If there are k numbers in the coming stream data, the first method takes K * C *
 
 If the stream data is very sparse in the 60s window, then C > n, in this situation, the second method is faster than the first method. 
 
-However, given the Venmo payments is often quite intensive n >> C, as such, in this situation, the first method is more efficient than the first method. 
+However, given the Venmo payments is often quite intensive n >> C, as such, in this situation, the first method is more efficient than the second method. 
 
 
 
-### How to achieve delete any element from a heap in O(log n)?
+### How to achieve delete any element from a heap and make updates in O(log n) ?
 Orginally, finding an item in a heap is an O(n) operation, but if you already know where it is in the heap, removing it is O(log n).
 
 Thus, the position of each node (node, index_in_heap) can be maintained separately in a hashtable which has O(1) lookup complexity (on average). The overall complexity of looking up and deleting an element of a heap is O(log n).
