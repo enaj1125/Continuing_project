@@ -1,4 +1,4 @@
-# Hash-heap data structure for computing the median of a stream data
+
 
 ####### Developed by Yan Jiang using Python 3.
 
